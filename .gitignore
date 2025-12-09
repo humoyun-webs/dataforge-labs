@@ -1,0 +1,90 @@
+# =========================================
+# Node.js / TypeScript / Monorepo Gitignore
+# =========================================
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Output folders
+dist/
+build/
+.out/
+.next/
+.next-static/
+.vercel/
+functions/
+
+# Turborepo / Nx / Monorepo caches
+turbo/
+.turbo/
+nx-cache/
+.cache/
+.vscode-test/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example   # example qoldiramiz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Coverage and test output
+coverage/
+.nyc_output/
+jest.cache/
+test-results/
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
+out/
+
+# Prisma
+prisma/*.db
+prisma/migrations/*.lock
+
+# NestJS
+**/dist/
+**/.nest-*
+
+# Docker
+docker-data/
+*.pid
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Misc
+*.zip
+*.tar
+*.gz
+*.rar
+*.sql
+*.xlsx
+*.csv
